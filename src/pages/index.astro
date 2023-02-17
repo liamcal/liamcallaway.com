@@ -1,29 +1,52 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon";
 ---
 
 <Layout title="Liam Callaway">
     <main>
+        <section class="text-center p-10">
+            <h1 class="text-5xl pt-2 pb-8 text-teal-500 font-medium">
+                Liam Callaway
+            </h1>
+            <div class="flex justify-center">
+                <img
+                    class="w-60 h-60 rounded-full"
+                    src="/profile.jpeg"
+                    alt="Rounded avatar"
+                />
+            </div>
+            <h2 class="text-2xl py-4 text-gray-400">
+                Full Stack Developer
+            </h2>
+        </section>
         <section>
-            <h1>Hi 👋 I'm Liam</h1>
-            <p>
-                I'm a full-stack software engineer based in Sydney, Australia 🦘
-            </p>
-            <p>This page is currently 🔨<em>under construction</em>🔨</p>
-            <p>Hopefully there'll be more to see soon 👀</p>
+            <h2 class="text-lg text-center text-gray-400 mb-4">Get in touch</h2>
+            <div class="flex justify-center">
+                <a
+                    class="w-12 h-12 mx-4 text-gray-400"
+                    href="https://twitter.com/liamcallaway"
+                >
+                    <Icon name="simple-icons:twitter" /></a
+                >
+                <a
+                    class="w-12 h-12 mx-4 text-gray-400"
+                    href="https://aus.social/@liamcallaway"
+                    ><Icon name="simple-icons:mastodon" /></a
+                >
+                <a
+                    class="w-12 h-12 mx-4 text-gray-400"
+                    href="javascript:location='mailto:\u006c\u0069\u0061\u006d\u0040\u006c\u0069\u0061\u006d\u0063\u0061\u006c\u006c\u0061\u0077\u0061\u0079\u002e\u0063\u006f\u006d';void 0"
+                >
+                    <Icon name="ic:round-mail" /></a
+                >
+                <a class="w-12 h-12 mx-4 text-gray-400" href="https://au.linkedin.com/in/liam-callaway-31000a67">
+                    <Icon name="simple-icons:linkedin" /></a
+                >
+                <a class="w-12 h-12 mx-4 text-gray-400" href="https://github.com/liamcal">
+                    <Icon name="simple-icons:github" /></a
+                >
+            </div>
         </section>
     </main>
 </Layout>
-
-<style>
-    main {
-        margin: auto;
-        padding: 1.5rem;
-        max-width: 60ch;
-    }
-    h1 {
-        font-size: 3rem;
-        font-weight: 800;
-        margin: 0;
-    }
-</style>
