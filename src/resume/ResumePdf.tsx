@@ -92,21 +92,9 @@ const MyDocument = () => (
 );
 
 export const DownloadResume = () => {
-    const [isLoading, setIsLoading] = useState(true);
-    const hideLoadingElement = () => {
-        if (isLoading) {
-            setIsLoading(false);
-        }
-        return true;
-    };
-
-    console.log("render", isLoading);
     return (
-        <React.Fragment>
-            {isLoading && <p>Resume loading...</p>}
-            <PDFDownloadLink document={<MyDocument />} fileName="resume.pdf">
-                {hideLoadingElement() ? <span>Download resume</span> : null}
-            </PDFDownloadLink>
-        </React.Fragment>
+        <PDFDownloadLink document={<MyDocument />} fileName="resume.pdf">
+            Download resume
+        </PDFDownloadLink>
     );
 };
