@@ -6,11 +6,11 @@ import {
     StyleSheet,
     Image,
     PDFDownloadLink,
-    type BlobProviderParams,
-    PDFViewer,
 } from "@react-pdf/renderer";
 
 import ProfileImg from "../images/profile.jpeg";
+import { useRef, useState } from "react";
+import React from "react";
 
 // Create styles
 const styles = StyleSheet.create({
@@ -92,14 +92,21 @@ const MyDocument = () => (
 );
 
 export const DownloadResume = () => {
-    const children = (({ loading }: BlobProviderParams) =>
-        loading
-            ? "Loading"
-            : " Click here to download resume") as unknown as React.ReactElement<BlobProviderParams>; // TS Hack to workaround https://github.com/diegomura/react-pdf/issues/2886
+    const [isLoading, setIsLoading] = useState(true);
+    const hideLoadingElement = () => {
+        if (isLoading) {
+            setIsLoading(false);
+        }
+        return true;
+    };
 
+    console.log("render", isLoading);
     return (
-        <PDFDownloadLink document={<MyDocument />} fileName="resume.pdf">
-            {children}
-        </PDFDownloadLink>
+        <React.Fragment>
+            {isLoading && <p>Resume loading...</p>}
+            <PDFDownloadLink document={<MyDocument />} fileName="resume.pdf">
+                {hideLoadingElement() ? <span>Download resume</span> : null}
+            </PDFDownloadLink>
+        </React.Fragment>
     );
 };
