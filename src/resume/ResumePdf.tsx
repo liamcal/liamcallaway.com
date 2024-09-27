@@ -5,9 +5,12 @@ import {
     Document,
     StyleSheet,
     Image,
+    PDFDownloadLink,
+    type BlobProviderParams,
+    PDFViewer,
 } from "@react-pdf/renderer";
 
-import ProfileImg from '../images/profile.jpeg';
+import ProfileImg from "../images/profile.jpeg";
 
 // Create styles
 const styles = StyleSheet.create({
@@ -61,7 +64,7 @@ const styles = StyleSheet.create({
 });
 
 // Create Document Component
-export const MyDocument = () => (
+const MyDocument = () => (
     <Document>
         <Page size="A4" style={styles.page}>
             <View style={styles.headingSection}>
@@ -71,10 +74,7 @@ export const MyDocument = () => (
                         Full Stack Software Engineer
                     </Text>
                 </View>
-                <Image
-                    style={styles.profileImg}
-                    src={ProfileImg}
-                />
+                <Image style={styles.profileImg} src={ProfileImg} />
             </View>
             <View style={styles.mainSection}>
                 <View style={styles.leftSection}>
@@ -90,3 +90,16 @@ export const MyDocument = () => (
         </Page>
     </Document>
 );
+
+export const DownloadResume = () => {
+    const children = (({ loading }: BlobProviderParams) =>
+        loading
+            ? "Loading"
+            : " Click here to download resume") as unknown as React.ReactElement<BlobProviderParams>; // TS Hack to workaround https://github.com/diegomura/react-pdf/issues/2886
+
+    return (
+        <PDFDownloadLink document={<MyDocument />} fileName="resume.pdf">
+            {children}
+        </PDFDownloadLink>
+    );
+};
