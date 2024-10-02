@@ -1,0 +1,33 @@
+[
+    {
+        "name": "Campaign Monitor",
+        "role": "Full Stack Developer",
+        "duration": "2020–Present",
+        "description": [
+            "Contributing to an online email marketing platform",
+            "Leading user-facing feature development across multiple product areas:\nemail reporting, contact management, account billing, conversion, and retention",
+            "Establishing and upholding standards and best practices for front-end development",
+            "Organising and facilitating monthly development knowledge sharing sessions",
+            "Assisting with mentoring, outreach, and recruitment"
+        ]
+    },
+    {
+        "name": "Wisetech Global",
+        "role": "Software Developer",
+        "duration": "2018–2020",
+        "description": [
+            ".NET development for a global logistics platform",
+            "Focused on Master Data Management and eCommerce areas",
+            "Provided mentoring for new starters"
+        ]
+    },
+    {
+        "name": "University of Tasmania",
+        "role": "Undergraduate Tutor and Research Assistant",
+        "duration": "2014–2017",
+        "description": [
+            "Prepared and delivered tutorials for undergraduate computing units",
+            "Developed an online experiment platform for use in a psychological research study"
+        ]
+    }
+]
