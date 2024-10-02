@@ -125,8 +125,7 @@ export const Resume = () => {
                     </View>
                 </View>
                 <View style={styles.footerSection}>
-                    <Text>+61 447 573 155</Text>
-                    <Text>liam@liamcallaway.com</Text>
+                    <Text>liamcallaway.com</Text>
                     <Text>github.com/liamcal</Text>
                 </View>
             </Page>
