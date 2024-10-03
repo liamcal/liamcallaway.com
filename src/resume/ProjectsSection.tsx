@@ -1,6 +1,6 @@
 import { Section } from "./Section";
 import { SectionItem } from "./SectionItem";
-import projects from "./data/projects.json";
+import projects from "./data/projects.json" assert { type: "json" };
 
 export const ProjectsSection = () => {
     const projectData = projects;

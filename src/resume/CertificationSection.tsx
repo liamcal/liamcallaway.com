@@ -1,16 +1,7 @@
+import { View, Link, Image } from "@react-pdf/renderer";
 import { Section } from "./Section";
 import { SectionItem } from "./SectionItem";
-import certifications from "./data/certifications.json";
-import {
-    Page,
-    Text,
-    View,
-    Document,
-    StyleSheet,
-    Link,
-    Image,
-    PDFDownloadLink,
-} from "@react-pdf/renderer";
+import certifications from "./data/certifications.json" assert { type: "json" };
 
 export const CertificationSection = () => {
     const certificationData = certifications;
