@@ -5,7 +5,7 @@
     "scripts": {
         "dev": "astro dev",
         "start": "astro dev",
-        "build": "astro build",
+        "build": "bun run GeneratePdf.tsx && astro build",
         "preview": "astro preview",
         "astro": "astro",
         "format": "prettier  --plugin=prettier-plugin-astro --plugin=prettier-plugin-tailwindcss --write ."
