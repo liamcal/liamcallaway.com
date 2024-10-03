@@ -29,7 +29,7 @@ export const CertificationSection = () => {
                 <Link href="https://cp.certmetrics.com/amazon/en/public/verify/credential/845427c86b4d48baa5f386cd95edd646">
                     <Image
                         src="https://images.credly.com/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png"
-                        style={{ height: 88, width: 88 }}
+                        style={{ height: 64, width: 64 }}
                     ></Image>
                 </Link>
             </View>
