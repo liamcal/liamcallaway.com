@@ -1,15 +1,7 @@
-import {
-    Page,
-    Text,
-    View,
-    Document,
-    StyleSheet,
-    PDFDownloadLink,
-} from "@react-pdf/renderer";
-import {size, color} from './theme';
+import { Text, View, StyleSheet } from "@react-pdf/renderer";
+import { size, color } from "./theme";
 
 const styles = StyleSheet.create({
-
     headingSection: {
         padding: size.base,
         color: color.white,
@@ -26,16 +18,10 @@ const styles = StyleSheet.create({
 });
 
 export const HeaderSection = () => {
-    return   <View
-    style={
-        styles.headingSection
-    }
->
-    <Text style={styles.headingTextTitle}>
-        Liam Callaway
-    </Text>
-    <Text>
-        Full Stack Software Engineer
-    </Text>
-                  </View>;
-}
+    return (
+        <View style={styles.headingSection}>
+            <Text style={styles.headingTextTitle}>Liam Callaway</Text>
+            <Text>Full Stack Software Engineer</Text>
+        </View>
+    );
+};

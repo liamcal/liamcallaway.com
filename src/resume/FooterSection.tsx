@@ -1,10 +1,5 @@
-import {
-    Text,
-    View,
-    StyleSheet,
-} from "@react-pdf/renderer";
-import {size, color} from './theme';
-
+import { Text, View, StyleSheet } from "@react-pdf/renderer";
+import { size, color } from "./theme";
 
 const styles = StyleSheet.create({
     footerSection: {
@@ -22,8 +17,10 @@ const styles = StyleSheet.create({
 });
 
 export const FooterSection = () => {
-    return <View style={styles.footerSection}>
-    <Text>liamcallaway.com</Text>
-    <Text>github.com/liamcal</Text>
-</View>
-}
+    return (
+        <View style={styles.footerSection}>
+            <Text>liamcallaway.com</Text>
+            <Text>github.com/liamcal</Text>
+        </View>
+    );
+};

@@ -1,6 +1,5 @@
 import {
     Page,
-    Text,
     View,
     Document,
     StyleSheet,
@@ -14,10 +13,9 @@ import { CertificationSection } from "./CertificationSection";
 import { ProjectsSection } from "./ProjectsSection";
 import { SkillsSection } from "./SkillsSection";
 import { ReferencesSection } from "./ReferencesSection";
-import {size, color} from './theme';
+import { size, color } from "./theme";
 import { HeaderSection } from "./HeaderSection";
 import { FooterSection } from "./FooterSection";
-
 
 const styles = StyleSheet.create({
     page: {
@@ -27,7 +25,6 @@ const styles = StyleSheet.create({
         fontFamily: "Roboto",
         fontWeight: "normal",
         margin: 0,
-
     },
     mainSection: {
         lineHeight: 1.5,
@@ -52,7 +49,6 @@ const styles = StyleSheet.create({
         gap: size.base,
         width: "70%",
     },
-
 });
 
 export const Resume = () => {

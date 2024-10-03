@@ -24,6 +24,6 @@ Font.register({
         },
     ],
 });
-Font.registerHyphenationCallback(word => [word]);
+Font.registerHyphenationCallback((word) => [word]);
 
 await renderToFile(<Resume />, `${import.meta.dir}/public/resume.pdf`);

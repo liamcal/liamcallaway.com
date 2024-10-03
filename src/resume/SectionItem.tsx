@@ -36,9 +36,7 @@ export const SectionItem = ({
     includeSeparateLink = false,
 }: SectionProps) => {
     const descriptionItems = description.map((descriptionLine, idx) => (
-        <Text key={idx}>
-            {descriptionLine}
-        </Text>
+        <Text key={idx}>{descriptionLine}</Text>
     ));
 
     return (

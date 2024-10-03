@@ -8,7 +8,7 @@
         "build": "astro build",
         "preview": "astro preview",
         "astro": "astro",
-		"format": "prettier  --plugin=prettier-plugin-astro --plugin=prettier-plugin-tailwindcss --write ."
+        "format": "prettier  --plugin=prettier-plugin-astro --plugin=prettier-plugin-tailwindcss --write ."
     },
     "dependencies": {
         "@astrojs/react": "^3.6.2",
@@ -26,12 +26,12 @@
     },
     "devDependencies": {
         "classnames": "^2.3.2",
-		"prettier": "^3.3.3",
-		"prettier-plugin-astro": "^0.14.1",
-		"prettier-plugin-tailwindcss": "^0.6.8"
+        "prettier": "^3.3.3",
+        "prettier-plugin-astro": "^0.14.1",
+        "prettier-plugin-tailwindcss": "^0.6.8"
     },
     "overrides": {
-		"@react-pdf/layout": "3.6.4",
-		"@react-pdf/textkit": "4.2.1"
+        "@react-pdf/layout": "3.6.4",
+        "@react-pdf/textkit": "4.2.1"
     }
 }

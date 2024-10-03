@@ -1,6 +1,6 @@
 import { Section } from "./Section";
 import { SectionItem } from "./SectionItem";
-import engagementData from "./data/Engagement.json";
+import engagementData from "./data/engagement.json";
 
 export const EngagementSection = () => {
     return (
