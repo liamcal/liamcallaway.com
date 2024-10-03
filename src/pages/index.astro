@@ -3,7 +3,6 @@ import { Icon } from "astro-icon";
 import { Picture } from "astro:assets";
 import profileImage from "../images/profile.jpeg";
 import Layout from "../layouts/Layout.astro";
-import { DownloadResume } from "../resume/ResumePdf";
 ---
 
 <Layout title="Liam Callaway">
@@ -65,7 +64,6 @@ import { DownloadResume } from "../resume/ResumePdf";
                     >
                 </div>
             </div>
-            <DownloadResume client:only="react" />
         </section>
     </main>
 </Layout>
