@@ -4,7 +4,7 @@ import skillsData from "./data/skills.json";
 
 export const SkillsSection = () => {
     return (
-        <Section title="Technical Skills">
+        <Section title="Technical skills">
             <Text>{skillsData.join(", ")}</Text>
         </Section>
     );
