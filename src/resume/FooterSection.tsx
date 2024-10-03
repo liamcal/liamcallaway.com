@@ -1,18 +1,18 @@
 import { Text, View, StyleSheet } from "@react-pdf/renderer";
-import { size, color } from "./theme";
+import { spacing, color, fontSize } from "./theme";
 
 const styles = StyleSheet.create({
     footerSection: {
-        paddingHorizontal: size.base,
-        paddingVertical: size.small,
-        fontSize: size.medium,
+        paddingHorizontal: spacing.base,
+        paddingVertical: spacing.small,
+        fontSize: fontSize.medium,
         color: "white",
         backgroundColor: color.primaryDark,
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         flexDirection: "row",
-        gap: size.extraLarge,
+        gap: spacing.extraLarge,
     },
 });
 

@@ -1,19 +1,22 @@
 import { Link, Text, View, StyleSheet } from "@react-pdf/renderer";
 import { UnorderedList } from "./UnorderedList";
+import { fontSize, spacing } from "./theme";
 
 const styles = StyleSheet.create({
     sectionItem: {
         display: "flex",
-        fontSize: 10,
     },
     sectionItemHeading: {
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",
-        // fontWeight: "bold",
     },
-    sectionItemDescription: { paddingTop: 4 },
+    sectionItemDescription: { paddingTop: spacing.tiny },
     sectionItemDuration: { display: "flex" },
+    linkText: {
+        fontSize: fontSize.tiny,
+        marginTop: spacing.tiny / 2,
+    },
 });
 
 interface SectionProps {
@@ -78,11 +81,6 @@ export const SectionItem = ({
                     </View>
                 )}
             </View>
-            {/* {subHeading && (
-                <View>
-                    <Text style={{ fontStyle: "italic" }}>{subHeading}</Text>
-                </View>
-            )} */}
             <View style={styles.sectionItemDescription}>
                 {includeListBullets ? (
                     <UnorderedList>{descriptionItems}</UnorderedList>
@@ -92,7 +90,7 @@ export const SectionItem = ({
             </View>
             {link && includeSeparateLink && (
                 <View>
-                    <Text style={{ fontSize: 8, marginTop: 2 }}>{link}</Text>
+                    <Text style={styles.linkText}>{link}</Text>
                 </View>
             )}
         </View>

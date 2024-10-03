@@ -1,16 +1,6 @@
-import {
-    Page,
-    Text,
-    View,
-    Document,
-    StyleSheet,
-    Image,
-    PDFDownloadLink,
-    Svg,
-    Circle,
-} from "@react-pdf/renderer";
+import { View, StyleSheet, Svg, Circle } from "@react-pdf/renderer";
+import { spacing } from "./theme";
 
-// styles
 const styles = StyleSheet.create({
     list: {
         display: "flex",
@@ -19,11 +9,11 @@ const styles = StyleSheet.create({
     listItem: {
         display: "flex",
         flexDirection: "row",
-        gap: 8,
+        gap: spacing.small,
         width: "100%",
     },
     bullet: {
-        marginTop: 4,
+        marginTop: spacing.tiny,
     },
 });
 
@@ -40,12 +30,7 @@ export const UnorderedList = ({ children }: UnorderedListProps) => {
                         <View style={styles.listItem} key={idx}>
                             <View style={styles.bullet}>
                                 <Svg width={4} height={4}>
-                                    <Circle
-                                        cx="2"
-                                        cy="2"
-                                        r="2"
-                                        fill={"black"}
-                                    />
+                                    <Circle cx="2" cy="2" r="2" fill="black" />
                                 </Svg>
                             </View>
                             {child}

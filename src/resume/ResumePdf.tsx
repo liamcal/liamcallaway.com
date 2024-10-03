@@ -13,40 +13,38 @@ import { CertificationSection } from "./CertificationSection";
 import { ProjectsSection } from "./ProjectsSection";
 import { SkillsSection } from "./SkillsSection";
 import { ReferencesSection } from "./ReferencesSection";
-import { size, color } from "./theme";
+import { spacing, color, fontSize } from "./theme";
 import { HeaderSection } from "./HeaderSection";
 import { FooterSection } from "./FooterSection";
 
 const styles = StyleSheet.create({
     page: {
-        flexDirection: "column",
         backgroundColor: color.white,
-        fontSize: size.base,
+        flexDirection: "column",
         fontFamily: "Roboto",
+        fontSize: fontSize.small,
         fontWeight: "normal",
         margin: 0,
     },
     mainSection: {
-        lineHeight: 1.5,
-        fontSize: size.medium,
         display: "flex",
         flexDirection: "row",
         flexGrow: 1,
+        lineHeight: 1.5,
     },
     leftSection: {
         backgroundColor: color.primaryLight,
-        padding: size.base,
-        width: "30%",
         display: "flex",
         flexDirection: "column",
-        gap: size.base,
+        gap: spacing.base,
+        padding: spacing.base,
+        width: "30%",
     },
     rightSection: {
-        padding: size.base,
         display: "flex",
         flexDirection: "column",
-
-        gap: size.base,
+        gap: spacing.base,
+        padding: spacing.base,
         width: "70%",
     },
 });

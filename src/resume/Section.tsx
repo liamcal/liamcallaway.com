@@ -1,19 +1,20 @@
 import { Text, View, StyleSheet } from "@react-pdf/renderer";
+import { fontSize, spacing } from "./theme";
 
 const styles = StyleSheet.create({
     section: { width: "100%" },
     sectionTitle: {
-        fontSize: 14,
-        fontWeight: "bold",
-        borderColor: "black",
         borderBottom: 1,
+        borderColor: "black",
         borderStyle: "solid",
+        fontSize: fontSize.large,
+        fontWeight: "bold",
     },
     sectionItems: {
-        paddingTop: 8,
         display: "flex",
         flexDirection: "column",
-        gap: 8,
+        gap: spacing.small,
+        paddingTop: spacing.small,
     },
 });
 
