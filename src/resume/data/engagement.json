@@ -1,0 +1,27 @@
+[
+    {
+        "name": "National Computer Science School",
+        "duration": "2013–2024",
+        "role": "Volunteer Tutor and Lecturer",
+        "description": [
+            "Tutored students at the NCSS Summer School and NCSS Challenge",
+            "Planned and delivered the Summer School's core academic content"
+        ]
+    },
+    {
+        "name": "UTS Industry Guest Lecture",
+        "duration": "2019, 2020",
+        "role": "Invited Speaker",
+        "description": [
+            "Presented a 90-minute lecture and demo titled “.NET App Developement and Entity Framework in Industry”"
+        ]
+    },
+    {
+        "name": "Pycon AU",
+        "duration": "2018",
+        "role": "Accepted Speaker",
+        "description": [
+            "Presented a 30-minute talk titled “Pi-thon: Teaching maths with Python”\nRecording: http://bit.ly/pcaulc18"
+        ]
+    }
+]
