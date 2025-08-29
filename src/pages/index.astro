@@ -1,5 +1,5 @@
 ---
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 import { Picture } from "astro:assets";
 import profileImage from "../images/profile.jpg";
 import Layout from "../layouts/Layout.astro";
@@ -18,7 +18,9 @@ import Layout from "../layouts/Layout.astro";
                     alt="Rounded avatar"
                 />
             </div>
-            <h2 class="py-4 text-2xl text-gray-300">Full Stack Software Engineer</h2>
+            <h2 class="py-4 text-2xl text-gray-300">
+                Full Stack Software Engineer
+            </h2>
         </section>
         <section
             class="flex flex-col items-center justify-center gap-8 text-lg text-gray-300"
@@ -34,33 +36,45 @@ import Layout from "../layouts/Layout.astro";
                 <h2 class="text-center text-lg">Get in touch</h2>
                 <div class="flex justify-center">
                     <a
-                        class="mx-4 h-12 w-12 hover:text-white"
+                        class="hover:text-white"
                         href="https://twitter.com/liamcallaway"
                     >
-                        <Icon name="simple-icons:twitter" /></a
+                        <Icon
+                            name="simple-icons:twitter"
+                            class="mx-4 h-12 w-12"
+                        /></a
                     >
                     <a
-                        class="mx-4 h-12 w-12 hover:text-white"
+                        class="hover:text-white"
                         href="https://aus.social/@liamcallaway"
-                        ><Icon name="simple-icons:mastodon" /></a
+                        ><Icon
+                            name="simple-icons:mastodon"
+                            class="mx-4 h-12 w-12"
+                        /></a
                     >
                     <a
-                        class="mx-4 h-12 w-12 hover:text-white"
+                        class="hover:text-white"
                         href="javascript:location='mailto:\u006c\u0069\u0061\u006d\u0040\u006c\u0069\u0061\u006d\u0063\u0061\u006c\u006c\u0061\u0077\u0061\u0079\u002e\u0063\u006f\u006d';void 0"
                     >
-                        <Icon name="ic:round-mail" /></a
+                        <Icon name="ic:round-mail" class="mx-4 h-12 w-12" /></a
                     >
                     <a
-                        class="mx-4 h-12 w-12 hover:text-white"
+                        class="hover:text-white"
                         href="https://au.linkedin.com/in/liam-callaway-31000a67"
                     >
-                        <Icon name="simple-icons:linkedin" /></a
+                        <Icon
+                            name="simple-icons:linkedin"
+                            class="mx-4 h-12 w-12"
+                        /></a
                     >
                     <a
-                        class="mx-4 h-12 w-12 hover:text-white"
+                        class="hover:text-white"
                         href="https://github.com/liamcal"
                     >
-                        <Icon name="simple-icons:github" /></a
+                        <Icon
+                            name="simple-icons:github"
+                            class="mx-4 h-12 w-12"
+                        /></a
                     >
                 </div>
             </div>
