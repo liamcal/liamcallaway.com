@@ -1,44 +1,40 @@
 {
-  "name": "",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "bun run GeneratePdf.tsx && astro build",
-    "preview": "astro preview",
-    "astro": "astro",
-    "format": "prettier  --plugin=prettier-plugin-astro --plugin=prettier-plugin-tailwindcss --write ."
-  },
-  "dependencies": {
-    "@astrojs/react": "^4.3.0",
-    "@astrojs/tailwind": "6.0.2",
-    "@fontsource/inter": "^4.5.15",
-    "@iconify-json/ic": "^1.2.4",
-    "@iconify-json/simple-icons": "^1.2.49",
-    "@react-pdf/renderer": "^4.0.0",
-    "@types/react": "^18.3.9",
-    "@types/react-dom": "^18.3.0",
-    "@vercel/analytics": "^1.5.0",
-    "@vercel/speed-insights": "^1.2.0",
-    "astro": "5.13.4",
-    "astro-feather-icons": "^1.0.2",
-    "astro-icon": "^1.1.5",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "tailwindcss": "^3.4.13"
-  },
-  "devDependencies": {
-    "classnames": "^2.5.1",
-    "prettier": "^3.3.3",
-    "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-tailwindcss": "^0.6.8"
-  },
-  "overrides": {
-    "@react-pdf/layout": "3.6.4",
-    "@react-pdf/textkit": "4.2.1"
-  },
-  "trustedDependencies": [
-    "@vercel/speed-insights"
-  ]
+    "name": "",
+    "type": "module",
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "astro dev",
+        "start": "astro dev",
+        "build": "bun run GeneratePdf.tsx && astro build",
+        "preview": "astro preview",
+        "astro": "astro",
+        "format": "prettier  --plugin=prettier-plugin-astro --plugin=prettier-plugin-tailwindcss --write ."
+    },
+    "dependencies": {
+        "@astrojs/react": "^4.3.0",
+        "@fontsource/inter": "^4.5.15",
+        "@iconify-json/ic": "^1.2.4",
+        "@iconify-json/simple-icons": "^1.2.49",
+        "@react-pdf/renderer": "^4.3.0",
+        "@tailwindcss/vite": "^4.1.12",
+        "@types/react": "^18.3.9",
+        "@types/react-dom": "^18.3.0",
+        "@vercel/analytics": "^1.5.0",
+        "@vercel/speed-insights": "^1.2.0",
+        "astro": "5.13.4",
+        "astro-feather-icons": "^1.0.2",
+        "astro-icon": "^1.1.5",
+        "react": "^19.1.1",
+        "react-dom": "^19.1.1",
+        "tailwindcss": "^4.1.12"
+    },
+    "devDependencies": {
+        "classnames": "^2.5.1",
+        "prettier": "^3.3.3",
+        "prettier-plugin-astro": "^0.14.1",
+        "prettier-plugin-tailwindcss": "^0.6.14"
+    },
+    "trustedDependencies": [
+        "@vercel/speed-insights"
+    ]
 }

@@ -15,6 +15,7 @@ const styles = StyleSheet.create({
         flexDirection: "column",
         gap: spacing.small,
         paddingTop: spacing.small,
+        lineHeight: 0.825,
     },
 });
 

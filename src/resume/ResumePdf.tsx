@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
         display: "flex",
         flexDirection: "row",
         flexGrow: 1,
-        lineHeight: 1.5,
+        lineHeight: 1.25,
     },
     leftSection: {
         backgroundColor: color.primaryLight,
