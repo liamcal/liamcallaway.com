@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "space-between",
     },
-    sectionItemDescription: { paddingTop: spacing.tiny },
+    sectionItemDescription: { paddingTop: spacing.tiny, paddingRight: spacing.small },
     sectionItemDuration: { display: "flex" },
     linkText: {
         fontSize: fontSize.tiny,

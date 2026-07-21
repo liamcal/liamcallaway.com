@@ -1,12 +1,39 @@
 [
-    "JS/TS",
-    "React",
-    "NextJS",
-    "Astro",
-    "NodeJS",
-    "HTML",
-    "CSS",
-    "C#/.NET",
-    "Python",
-    "SQL"
+    {
+        "title": "Languages",
+        "values": ["C#", "TS/JS", "Java", "SQL", "HTML", "CSS", "Python"]
+    },
+    {
+        "title": "Frontend",
+        "values": ["React", "TanStack Query", "Sass", "BEM", "Webpack", "Vite"]
+    },
+    {
+        "title": "Backend",
+        "values": [
+            ".NET/ASP.NET Core",
+            "Dapper/ PetaPoco",
+            "gRPC",
+            "Protobuf",
+            "Kafka"
+        ]
+    },
+    {
+        "title": "Cloud & DevOps",
+        "values": [
+            "AWS (EC2, ECS, S3, RDS, SQS, etc.)",
+            "Terraform",
+            "Docker",
+            "TeamCity",
+            "Datadog",
+            "Segment"
+        ]
+    },
+    {
+        "title": "Databases",
+        "values": ["SQL Server", "PostgreSQL", "DynamoDB", "Redis"]
+    },
+    {
+        "title": "Testing",
+        "values": ["NUnit", "Jest", "React Testing Library", "Cypress", "Playwright"]
+    }
 ]

@@ -1,14 +1,15 @@
 [
     {
         "name": "Campaign Monitor",
-        "role": "Full Stack Software Engineer",
+        "role": "Technical Lead Engineer",
         "duration": "2020–Present",
         "description": [
-            "Contributing to an online email marketing platform",
-            "Leading user-facing feature development across multiple product areas:\nemail reporting, contact management, account billing, conversion, and retention",
-            "Establishing and upholding standards and best practices for front-end development",
-            "Organising and facilitating monthly development knowledge sharing sessions",
-            "Assisting with mentoring, outreach, and recruitment"
+            "Owned technical strategy, prioritised engineering work, and guided a cross-functional team through successful project delivery.",
+            "Led feature development across multiple product areas, including email reporting, contact management, billing, conversion, and retention.",
+            "Established and championed front-end engineering standards, improving code quality, consistency, and maintainability across teams.",
+            "Integrated agentic AI into engineering workflows, defining best practices and improving developer productivity and delivery velocity.",
+            "Organised monthly engineering knowledge-sharing sessions that strengthened collaboration and spread technical expertise across the department.",
+            "Supported onboarding, engineering outreach, and technical recruitment, helping grow and strengthen the engineering team."
         ]
     },
     {
@@ -16,18 +17,9 @@
         "role": "Software Developer",
         "duration": "2018–2020",
         "description": [
-            ".NET development for a global logistics platform",
-            "Focused on Master Data Management and eCommerce areas",
-            "Provided mentoring for new starters"
-        ]
-    },
-    {
-        "name": "University of Tasmania",
-        "role": "Undergraduate Tutor and Research Assistant",
-        "duration": "2014–2017",
-        "description": [
-            "Prepared and delivered tutorials for undergraduate computing units",
-            "Developed an online experiment platform for use in a psychological research study"
+            "Developed and maintained .NET applications for a global logistics platform.",
+            "Delivered features across Master Data Management and eCommerce domains.",
+            "Supported onboarding and mentoring of new team members."
         ]
     }
 ]

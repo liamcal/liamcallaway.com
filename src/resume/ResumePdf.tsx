@@ -38,14 +38,14 @@ const styles = StyleSheet.create({
         flexDirection: "column",
         gap: spacing.base,
         padding: spacing.base,
-        width: "30%",
+        width: "35%",
     },
     rightSection: {
         display: "flex",
         flexDirection: "column",
         gap: spacing.base,
         padding: spacing.base,
-        width: "70%",
+        width: "65%",
     },
 });
 

@@ -2,19 +2,13 @@
     {
         "name": "Wordle Helper",
         "technologies": "React",
-        "description": "Companion web app to suggest possible next-moves for the NYT's Wordle game",
+        "description": "React web application that analyses Wordle game state to recommend optimal guesses.",
         "link": "https://github.com/liamcal/wordle-helper"
     },
     {
         "name": "Macro Roller",
         "technologies": "React, MUI",
-        "description": "PWA to parse, evaluate, and store dice roll macros for TTRPGs",
+        "description": "PWA featuring a custom parser and evaluator for TTRPG dice expressions.",
         "link": "https://github.com/liamcal/macro-roller"
-    },
-    {
-        "name": "Birdsong",
-        "technologies": "AngularJS, NodeJS, MongoDB",
-        "description": "Online citizen science platform to crowdsource tagging audio recording spectrograms",
-        "link": "https://github.com/liamcal/ICTProject2017"
     }
 ]

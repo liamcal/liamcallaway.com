@@ -10,7 +10,6 @@ const styles = StyleSheet.create({
         display: "flex",
         flexDirection: "row",
         gap: spacing.small,
-        width: "100%",
     },
     bullet: {
         marginTop: spacing.tiny,

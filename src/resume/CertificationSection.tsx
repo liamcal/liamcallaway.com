@@ -1,6 +1,5 @@
-import { View, Link, Image } from "@react-pdf/renderer";
+import { View, Link, Image, Text } from "@react-pdf/renderer";
 import { Section } from "./Section";
-import { SectionItem } from "./SectionItem";
 import certifications from "./data/certifications.json" assert { type: "json" };
 
 export const CertificationSection = () => {
@@ -24,13 +23,25 @@ export const CertificationSection = () => {
                     ></Image>
                 </Link>
             </View>
-            {certificationData.map((certification, idx) => (
-                <SectionItem
-                    key={idx}
-                    heading={certification.name}
-                    link={certification.link}
-                    description={[`Attained: ${certification.attained}`]}
-                />
+            {certificationData.map(({ name, link, attained }, idx) => (
+                <Text key={idx}>
+                    <Text style={{ fontWeight: "bold" }}>
+                        {link ? (
+                            <Link
+                                href={link}
+                                style={{
+                                    color: "black",
+                                    textDecoration: "none",
+                                }}
+                            >
+                                {name}
+                            </Link>
+                        ) : (
+                            `${name}`
+                        )}
+                    </Text>
+                    <Text>: {attained}</Text>
+                </Text>
             ))}
         </Section>
     );
